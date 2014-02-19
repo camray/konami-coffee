@@ -4,12 +4,12 @@ This is a fork of [konami-js](https://github.com/snaptortoise/konami-js) into co
 
 You can set either the URL to redirect to OR the function to execute when you instantiate the class:
 
-  easter_egg = new Konami 'http://your-special-easter-egg-website.com'
+    easter_egg = new Konami 'http://your-special-easter-egg-website.com'
   
 OR:
 
-  easter_egg = new Konami () ->
-    alert 'Konami code!'
+    easter_egg = new Konami () ->
+      alert 'Konami code!'
 
 A passed string is assumed to be the URL to redirect to. A passed function will be executed when the code is successfully entered:
 
