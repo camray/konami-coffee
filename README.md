@@ -1,14 +1,15 @@
-Konami-JS
+Konami-Coffee
 =========
-# This is a fork of [konami-js](https://github.com/snaptortoise/konami-js) into coffeescript.
+This is a fork of [konami-js](https://github.com/snaptortoise/konami-js) into coffeescript.
 
 You can set either the URL to redirect to OR the function to execute when you instantiate the class:
 
-	var easter_egg = new Konami('http://your-special-easter-egg-website.com');
-	
+  easter_egg = new Konami 'http://your-special-easter-egg-website.com'
+  
 OR:
 
-	var easter_egg = new Konami(function() { alert('Konami code!')});
+  easter_egg = new Konami () ->
+    alert 'Konami code!'
 
 A passed string is assumed to be the URL to redirect to. A passed function will be executed when the code is successfully entered:
 
